@@ -28,7 +28,11 @@ a {
 }
 
 h2 {
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1.5rem 0;        
+}
+
+p {
+    margin: 0;
 }
 
 section {
@@ -100,19 +104,27 @@ header {
     color: var(--color-text-red);
     padding: 0.5rem 1rem;
     border-radius: 8px;
+    width: 250px;
+    text-align: center;
+}
+
+.wrapper-about-me {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;    
+    gap: 3rem;    
+}
+
+.wrapper-about-me-img img {    
+    border-radius: 6px;    
+    height: 335px;
+    width: 335px;
+    
 }
 
 .wrapper-about-me-content {
-    display: grid;
-    grid-template-columns: 1fr 2.5fr;
-    gap: 3rem;
-}
-
-.wrapper-about-me-img {    
-    background-color: var(--color-background-theme-dark);
-    border-radius: 6px;
-    height: 0;
-    padding-top: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 /* Main > Article > Section My Skills */
@@ -120,6 +132,8 @@ header {
 #section-my-skills {
     background-color: var(--color-background-theme-dark);
     color: var(--color-text-red);
+    display: flex;
+    flex-direction: column;
 }
 
 #section-my-skills > * {
@@ -128,6 +142,43 @@ header {
     margin-right: auto;
 }
 
+#section-my-skills h2 {
+    background-color: var(--color-text-light-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+}
+
+.wrapper-my-skills-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    justify-items: center;
+}
+
+.wrapper-my-skills-content ul {
+    padding-left: 0;        
+    margin-top: 0;
+}
+
+.wrapper-my-skills-content li {    
+    padding: 0.25rem;    
+    border: 1px var(--color-text-red) solid;
+    border-radius: 6px;
+    max-width: 8rem;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;    
+}
+
+.wrapper-my-skills-content li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 1.2rem;
+} 
 
 /* Main > Article > Section Achievements */
 #section-achievements {
@@ -139,6 +190,15 @@ header {
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+}
+
+#section-achievements h2 {
+    background-color: var(--color-background-theme-dark);
+    color: var(--color-text-red);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
 }
 
 /* Main > Article > Personal Information */
@@ -153,6 +213,14 @@ header {
     margin-left: auto;
     margin-right: auto;
     text-align: justify;
+}
+
+#section-personal-info h2 {
+    background-color: var(--color-text-light-gray);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
 }
 
 /* Footer */
