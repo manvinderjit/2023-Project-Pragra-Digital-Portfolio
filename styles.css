@@ -1,5 +1,10 @@
 :root {
-
+    --color-background-theme-dark: rgb(34, 40, 49);
+    --color-background-theme-light: rgb(221, 221, 221);
+    --color-text-red: rgb(240, 84, 84);
+    --color-text-blue: rgb(48, 71, 94);
+    --color-text-light-gray: rgb(221, 221, 221);
+    --max-width-elements-internal: 1220px;
 }
 
 /* Universal Selector Styles */
@@ -8,8 +13,8 @@ body {
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0 auto;
     padding: 0;
-    max-width: 1920px;
-    color: var(--color-text-dark);
+    max-width: 1920px;    
+    background-color: var(--color-text-light-gray);  
 }
 
 li {
@@ -18,4 +23,109 @@ li {
 
 a {
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+section {
+    padding: 2rem 0;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+}
+
+/* Header */
+
+header {
+    position: sticky;
+    top: 0;    
+    background-color: var(--color-background-theme-dark);
+}
+
+/* Header: Navigation */
+
+.top-navigation {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top-navigation ul {
+    display: flex;
+    gap: 2rem;    
+}
+
+.top-navigation ul li a {
+    color: var(--color-text-red);
+}
+
+.top-navigation ul li a:hover {
+    color: var(--color-text-light-gray);
+}
+
+.logo {
+    /* background-image: url(./images/logo150.png);
+    object-fit: cover; */
+}
+
+/* Main */
+
+
+/* Main > Article */
+
+
+/*  */
+
+/* Main > Article > Section About Me */
+
+#section-about-me {
+    background-color: var(--color-background-theme-light);
+    color: var(--color-text-blue);
+}
+
+#section-about-me > * {
+    max-width: var(--max-width-elements-internal);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+/* Main > Article > Section My Skills */
+
+#section-my-skills {
+    background-color: var(--color-background-theme-dark);
+    color: var(--color-text-red);
+}
+
+#section-my-skills > * {
+    max-width: var(--max-width-elements-internal);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Main > Article > Section Achievements */
+#section-achievements {
+    color: var(--color-text-blue);
+}
+
+#section-achievements > * {
+    max-width: var(--max-width-elements-internal);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+/* Main > Article > Personal Information */
+
+#section-personal-info {
+    background-color: var(--color-background-theme-dark);
+    color: var(--color-text-red);
+}
+
+#section-personal-info > * {
+    max-width: var(--max-width-elements-internal);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
 }
