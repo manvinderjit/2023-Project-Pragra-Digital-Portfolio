@@ -27,11 +27,16 @@ a {
     font-weight: 500;
 }
 
+h2 {
+    margin: 0 0 1.5rem 0;
+}
+
 section {
-    padding: 2rem 0;
-    min-height: 50vh;
+    padding: 4rem 0;
+    /* min-height: 50vh; */
     display: flex;
-    align-items: center;    
+    align-items: center;   
+    justify-content: center; 
     flex-direction: column;
 }
 
@@ -90,6 +95,26 @@ header {
     text-align: justify;
 }
 
+#section-about-me h2 {
+    background-color: var(--color-background-theme-dark);
+    color: var(--color-text-red);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.wrapper-about-me-content {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 3rem;
+}
+
+.wrapper-about-me-img {    
+    background-color: var(--color-background-theme-dark);
+    border-radius: 6px;
+    height: 0;
+    padding-top: 100%;
+}
+
 /* Main > Article > Section My Skills */
 
 #section-my-skills {
@@ -129,3 +154,15 @@ header {
     margin-right: auto;
     text-align: justify;
 }
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    color: var(--color-text-red);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
