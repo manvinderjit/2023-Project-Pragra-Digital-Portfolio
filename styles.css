@@ -36,8 +36,7 @@ p {
 }
 
 section {
-    padding: 4rem 0;
-    /* min-height: 50vh; */
+    padding: 4rem 0;    
     display: flex;
     align-items: center;   
     justify-content: center; 
@@ -72,18 +71,11 @@ header {
     color: var(--color-text-light-gray);
 }
 
-.logo {
-    /* background-image: url(./images/logo150.png);
-    object-fit: cover; */
-}
-
 /* Main */
 
 
 /* Main > Article */
 
-
-/*  */
 
 /* Main > Article > Section About Me */
 
@@ -118,13 +110,20 @@ header {
     border-radius: 6px;    
     height: 335px;
     width: 335px;
-    
 }
 
 .wrapper-about-me-content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.wrapper-about-me-content h3 {
+    margin: 0;
+}
+
+.span-text-red {
+    color: var(--color-text-red);
 }
 
 /* Main > Article > Section My Skills */
@@ -212,9 +211,13 @@ header {
     gap: 4rem;
 }
 
-
 .card-project {
-    max-width: 350px;
+    max-width: 350px;    
+    margin-top: 1.5rem;
+}
+
+.card-project img {
+    border-radius: 6px;    
 }
 
 /* Main > Article > Personal Information */
@@ -243,6 +246,14 @@ header {
     text-decoration: underline;
 }
 
+#section-personal-info ul {
+    padding-left: 0;
+}
+
+#section-personal-info ul li {
+    margin: 0.36rem;
+}
+
 /* Main > Article > Personal Information : Social Icons */
 
 /* Style all font awesome icons */
@@ -260,10 +271,6 @@ header {
     opacity: 0.7;
 }
 
-/* .wrapper-social-media-icons {
-    display: flex;
-} */
-
 /* Footer */
 footer {
     display: flex;
@@ -274,4 +281,3 @@ footer {
     font-size: 1rem;
     font-weight: 500;
 }
-
