@@ -181,6 +181,7 @@ header {
 } 
 
 /* Main > Article > Section Achievements */
+
 #section-achievements {
     color: var(--color-text-blue);
 }
@@ -199,6 +200,21 @@ header {
     border-radius: 8px;
     width: 250px;
     text-align: center;
+}
+
+.wrapper-achievements-content h3 {
+    text-align: center;
+}
+
+.wrapper-project-cards {
+    display: flex;    
+    justify-content: space-evenly;    
+    gap: 4rem;
+}
+
+
+.card-project {
+    max-width: 350px;
 }
 
 /* Main > Article > Personal Information */
@@ -222,6 +238,31 @@ header {
     width: 250px;
     text-align: center;
 }
+
+#section-personal-info h3 {
+    text-decoration: underline;
+}
+
+/* Main > Article > Personal Information : Social Icons */
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-text-red);
+}
+
+/* Add a hover effect */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* .wrapper-social-media-icons {
+    display: flex;
+} */
 
 /* Footer */
 footer {
